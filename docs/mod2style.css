@@ -1,0 +1,67 @@
+h2{
+  align-self:flex-end;
+  border-width: 0px 0px 1px 1px;
+  border-color:black;
+  border-style:solid;
+  margin-top:0px;
+  box-sizing:border-box;
+  width:150px;
+  text-align:center;
+}
+.chicken{
+    color: black;
+    background-color: pink;
+}
+.mutton{
+    color: white;
+    background-color: red;
+}
+.egg{
+    color: black;
+    background-color: lightyellow;
+
+}
+
+article{
+    box-sizing:border-box;
+    border: 2px solid black;
+    display:flex;
+    flex-direction:column;
+    background-color: #999999;
+    font-size: 20px;
+    padding:0px 0px 10px 10px;
+    margin: 0px 10px 0px 10px;
+
+}
+
+.container {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction: row;
+  justify-content:space-between;
+}
+h1{
+    text-align:center;
+}
+
+h2{
+    margin:0;
+}
+
+@media only screen and (min-width:992px){
+
+article {
+  width:50%;
+}
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+article{
+  width:48%;
+}
+}
+@media only screen and (max-width: 767px){
+ 
+ article{
+   width:33%;
+ }
+}
