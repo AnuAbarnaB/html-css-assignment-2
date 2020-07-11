@@ -1,5 +1,4 @@
 h2{
-  align-self:flex-end;
   border-width: 0px 0px 1px 1px;
   border-color:black;
   border-style:solid;
@@ -7,6 +6,7 @@ h2{
   box-sizing:border-box;
   width:150px;
   text-align:center;
+  float:right;
 }
 .chicken{
     color: black;
@@ -23,23 +23,17 @@ h2{
 }
 
 article{
-    box-sizing:border-box;
     border: 2px solid black;
-    display:flex;
-    flex-direction:column;
+    display:inline-block;
     background-color: #999999;
     font-size: 20px;
     padding:0px 0px 10px 10px;
-    margin: 0px 10px 0px 10px;
-
+    margin: 10px;
+}
+p{
+  padding-top:20px;
 }
 
-.container {
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction: row;
-  justify-content:space-between;
-}
 h1{
     text-align:center;
 }
@@ -48,20 +42,29 @@ h2{
     margin:0;
 }
 
-@media only screen and (min-width:992px){
+.container{
+ /* display: table-caption; */
+}
+
+
+
+@media(min-width:992px){
 
 article {
-  width:50%;
+  width:30%;
 }
 }
-@media only screen and (min-width:768px) and (max-width:991px){
+@media(max-width:991px) and (min-width:768px){
 article{
-  width:48%;
+  width:44%;
+}
+article:nth-child(3){
+  width:96%;
 }
 }
-@media only screen and (max-width: 767px){
+@media(max-width: 767px){
  
  article{
-   width:33%;
+   width:100%;
  }
 }
